@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_strouteplanner_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="getDirections">Get Directions</label>
+			<label index="start">from:</label>
+			<label index="destination">to:</label>
+			<label index="location_error">Location is not found!</label>
+			<label index="spam_error">Google spam error!</label>
+		</languageKey>
+		
+		<languageKey index="de" type="array">
+			<label index="getDirections">Route anzeigen</label>
+			<label index="start">von:</label>
+			<label index="destination">nach:</label>
+			<label index="location_error">Ort wurde nicht gefunden! Bitte genauer angeben (Strasse, PLZ, Ort)</label>
+			<label index="spam_error">Google spam error!</label>
+		</languageKey>
+	</data>
+</T3locallang>
