@@ -2,7 +2,7 @@ var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 
 $(document).ready(function() {
-	
+
 	function initialize() {
 		directionsDisplay = new google.maps.DirectionsRenderer();
 		var map = new google.maps.Map(document.getElementById('map_canvas'),myOptions);

@@ -55,10 +55,10 @@ class tx_strouteplanner_pi1 extends tslib_pibase {
 		$this->pi_setPiVarDefaults();
 		$this->pi_loadLL();
 		$this->pi_initPIflexForm();
-			
-		
+
+
 		foreach ($this->cObj->data['pi_flexform']['data']['sDEF']['lDEF'] as $key => $value) $$key = reset($value);
-		
+
 		$langkey = $GLOBALS['TSFE']->config['config']['language'];
 
 		foreach (explode(',', 'maptype,zoom,mapwidth,mapheight,destination,infotext,template') as $value) $$value  = ($this->conf[$value]) ? $this->conf[$value] : $$value;
