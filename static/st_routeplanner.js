@@ -73,12 +73,11 @@ $(document).ready(function() {
 		thisid = $(this).attr('id').split('_');
 		if($('#' + thisid[0] + '_st_routeplanner_start').val()) {
 			calcRoute($('#' + thisid[0] + '_st_routeplanner_start').val(),$('#' + thisid[0] + '_latlng').val());
+			directionsDisplay = new google.maps.DirectionsRenderer();
+			map = new google.maps.Map(document.getElementById(thisid[0] + '_map_canvas'), myOptions);
+			directionsDisplay.setMap(map);
+			directionsDisplay.setPanel(document.getElementById(thisid[0] + '_directions-panel'));
 		}
-
-		directionsDisplay = new google.maps.DirectionsRenderer();
-		map = new google.maps.Map(document.getElementById(thisid[0] + '_map_canvas'), myOptions);
-		directionsDisplay.setMap(map);
-		directionsDisplay.setPanel(document.getElementById(thisid[0] + '_directions-panel'));
 	});
 
 //	$('#st_routeplanner_start').bind('focus', function() {
