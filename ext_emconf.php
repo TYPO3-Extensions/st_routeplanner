@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'a simple route planner - Google Maps',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '0.2.1',
+	'version' => '0.2.2',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -34,7 +34,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '4.5.0-6.0.99',
+			'typo3' => '4.5.0-6.1.99',
 		),
 		'conflicts' => array(
 		),

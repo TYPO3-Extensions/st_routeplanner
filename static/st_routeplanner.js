@@ -9,6 +9,7 @@ $(document).ready(function() {
 		 * get Mapsettings by id
 		 */
 		if($('.tx-strouteplanner-pi1').length > 0) {
+
 			$('.tx-strouteplanner-pi1').each(function(){
 
 				mapid = $(this).parent().attr('id');
@@ -41,9 +42,6 @@ $(document).ready(function() {
 				marker.set("id", mapid);
 
 				google.maps.event.addListener(marker, 'click', function() {
-
-					console.log(marker.id);
-
 					infowindow.open(map,marker);
 				});
 			});
