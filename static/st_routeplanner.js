@@ -40,13 +40,6 @@ $(document).ready(function() {
 				google.maps.event.addListener(marker, 'click', function() {
 					infowindow.open(map,marker);
 				});
-
-//				$(document).on('click', '#c' + mapid + 'st_routeplanner_submit', function (e) {
-//					if($('#c' + mapid + 'st_routeplanner_start').val()) {
-//						infowindow.close(map,marker);
-//						marker.setMap(null);
-//					}
-//				});
 			});
 		}
 	}
@@ -80,21 +73,13 @@ $(document).ready(function() {
 		}
 	});
 
-//	$('#st_routeplanner_start').bind('focus', function() {
-//		oldValue = $(this).val();
-//		$(this).val('');
-//	});
-//
-//	$('#st_routeplanner_start').bind('blur', function() {
-//		newValue = $(this).val();
-//		if (newValue == '') {
-//			$(this).val(oldValue);
-//		}
-//	});
-
-	$('#st_routeplanner_start').keypress(function(e){
+	/**
+	 * start calculate by press enter
+	 */
+	$('.st_routeplanner_start').keypress(function(e){
+		thisid = $(this).attr('id').split('_');
 		if(e.which == 13){
-			calcRoute($('#st_routeplanner_start').val(),$('#st_routeplanner_end').html());
+			calcRoute($('#' + thisid[0] + 'st_routeplanner_start').val(),$('#' + thisid[0] + 'st_routeplanner_end').html());
 		}
 	});
 });
