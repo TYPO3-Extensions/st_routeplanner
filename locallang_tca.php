@@ -1,7 +1,7 @@
 <?php
 
 $LOCAL_LANG = Array (
-    'default' => Array (
+	'default' => Array (
 		'mapwidth'		=> 'Map width',
 		'mapheight'		=> 'Map height',
 		'destination'	=> 'Destination',
@@ -12,10 +12,10 @@ $LOCAL_LANG = Array (
 		'terrain' 		=> 'Terrain',
 		'zoom'			=> 'Zoom',
 		'infotext'		=> 'Bubbletext'
-    ),
-    'de' => Array (
-        'mapwidth'		=> 'Kartenbreite',
-	    'mapheight'		=> 'Kartenhöhe',
+	),
+	'de' => Array (
+		'mapwidth'		=> 'Kartenbreite',
+		'mapheight'		=> 'Kartenhöhe',
 		'destination'	=> 'Ziel',
 		'maptype' 		=> 'Maptype',
 		'roadmap' 		=> 'Roadmap',
@@ -24,6 +24,6 @@ $LOCAL_LANG = Array (
 		'terrain' 		=> 'Terrain',
 		'zoom'			=> 'Zoom',
 		'infotext'		=> 'Bubbletext'
-    ),
+	),
 );
 ?> 
