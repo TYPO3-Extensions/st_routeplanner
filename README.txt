@@ -11,16 +11,16 @@ terrain		= zeigt eine physische Karte an, die auf Gelaendeinformationen basiert.
      moegliche konfiguration per typoscript  
 -------------------------------------------------
 plugin.tx_strouteplanner_pi1 {
-	destination 	= Petristrasse, 37308, Heilbad Heiligenstadt
-	destinationcoor = 51.3766528 , 10.1377672
+	destination 	= Petersbergstraße1, 83026 Rosenheim
+	destinationcoor = 47.8489987 , 12.1137908
 	maptype 		= roadmap
 	sensor 			= true
-	zoom			= 7
-	mapwidth		= 400
-	mapheight		= 400
-	destinationname = name das Ziels in der Anzeige
-	bubbletext		= Der Text, der in der Bubble steht
-	template 		= link zum Templatefile
+	zoom			= 14
+	mapwidth		= 800
+	mapheight		= 800
+	destinationname = Name das Ziels in der Anzeige
+	infotext		= Der Text, der in der Bubble steht
+	template 		= Link zum Templatefile
 }
 
 | = letzter Trenner zum anzeigen des Zielnamens.

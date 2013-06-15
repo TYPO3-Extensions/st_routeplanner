@@ -61,7 +61,7 @@ class tx_strouteplanner_pi1 extends tslib_pibase {
 		$langkey = $GLOBALS['TSFE']->config['config']['language'];
 
 		foreach (explode(',', 'maptype,zoom,mapwidth,mapheight,destination,infotext,template') as $value) $$value  = ($this->conf[$value]) ? $this->conf[$value] : $$value;
-		$destination_coordinates 	= ($this->conf['destinationcoor']) 	? $this->conf['destinationcoor'] 	: $this->getMapsCoordinates($destination);
+		$destination_coordinates 	= ($this->conf['destinationcoor']) 	? explode(',', $this->conf['destinationcoor']) 	: $this->getMapsCoordinates($destination);
 		$sensor 					= ($this->conf['sensor']) 			? $this->conf['sensor'] 			: 'true';
 		$destination_name 			= ($this->conf['destinationname']) 	? $this->conf['destinationname'] 	: trim(end(explode('|', $destination)));
 		$cid = $this->cObj->data['uid'];
