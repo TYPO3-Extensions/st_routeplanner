@@ -83,6 +83,7 @@ class tx_strouteplanner_pi1 extends tslib_pibase {
 		$markerArray['###JSSETTINGS###']	.= '<input type="hidden" id="c' . $cid . '_zoom" value="' . $zoom . '" />';
 		$markerArray['###JSSETTINGS###']	.= '<input type="hidden" id="c' . $cid . '_maptype" value="' . $maptype . '" />';
 		$markerArray['###JSSETTINGS###']	.= '<input type="hidden" id="c' . $cid . '_infotext" value="' . preg_replace('/\r\n|\r|\n/', ' ', nl2br($infotext)) . '" />';
+		$markerArray['###JSSETTINGS###']	.= '<input type="hidden" id="c' . $cid . '_bubbletitle" value="' . $destination_name . '" />';
 
 		$template = ($template) ? $template : 'EXT:st_routeplanner/static/template.html' ;
 		$this->template=$this->cObj->fileResource($template);

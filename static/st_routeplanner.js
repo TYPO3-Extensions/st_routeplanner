@@ -12,10 +12,11 @@ $(document).ready(function() {
 			$('.tx-strouteplanner-pi1').each(function(){
 
 				mapid = $(this).parent().attr('id');
-				latlng = $(this).find('#' + mapid + '_latlng').val().split(',');
-				zoom = $(this).find('#' + mapid + '_zoom').val();
-				maptype = $(this).find('#' + mapid + '_maptype').val();
-				infotext = $(this).find('#' + mapid + '_infotext').val();
+				latlng = $('#' + mapid + '_latlng').val().split(',');
+				zoom = $('#' + mapid + '_zoom').val();
+				maptype = $('#' + mapid + '_maptype').val();
+				infotext = $('#' + mapid + '_infotext').val();
+				bubbletitle = $('#' + mapid + '_bubbletitle').val();
 
 				myLatlng = new google.maps.LatLng(latlng[0],latlng[1]);
 				myOptions = {
@@ -34,10 +35,15 @@ $(document).ready(function() {
 
 				marker = new google.maps.Marker({
 					position: myLatlng,
-					map: map
+					map: map,
+					title: bubbletitle
 				});
+				marker.set("id", mapid);
 
 				google.maps.event.addListener(marker, 'click', function() {
+
+					console.log(marker.id);
+
 					infowindow.open(map,marker);
 				});
 			});
