@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "st_routeplanner".
  *
- * Auto generated 15-06-2013 13:59
+ * Auto generated 15-06-2013 14:21
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'a simple route planner - Google Maps',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '0.3.0',
+	'version' => '0.3.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
