@@ -74,10 +74,10 @@ class tx_strouteplanner_pi1 extends tslib_pibase {
 		if($destination_coordinates == 'error2') return '<div class="tx_strouteplanner_error">' . $this->pi_getLL('spam_error') . '</div>';
 
 		$markerArray['###START###'] 		= '<label>' . $this->pi_getLL('start') . '</label><input id="c' . $cid . '_st_routeplanner_start" class="st_routeplanner_start" type="text" name="start" value="" />';
-		$markerArray['###DESTINATION###'] 	= '<label>' . $this->pi_getLL('destination') . '</label><span>' . $destination_name . '</span><div id="st_routeplanner_end">' . $destination_coordinates[0] . ',' . $destination_coordinates[1] . '</div>';
+		$markerArray['###DESTINATION###'] 	= '<label>' . $this->pi_getLL('destination') . '</label><span>' . $destination_name . '</span>';
 		$markerArray['###SUBMIT###']		= '<input type="submit" name="submit" id="c' . $cid . '_st_routeplanner_submit" class="st_routeplanner_submit" value="' . $this->pi_getLL('getDirections') . '" />';
-		$markerArray['###MAP###']			= '<div id="c' . $cid . '_map_canvas" style="width: ' . $mapwidth . 'px; height: ' . $mapheight . 'px"></div>';
-		$markerArray['###DIRECTION###']		= '<div id="c' . $cid . '_directions-panel" style="width: ' . $mapwidth . 'px"></div>';
+		$markerArray['###MAP###']			= '<div id="c' . $cid . '_map_canvas" class="map_canvas" style="width: ' . $mapwidth . 'px; height: ' . $mapheight . 'px"></div>';
+		$markerArray['###DIRECTION###']		= '<div id="c' . $cid . '_directions-panel" class="directions-panel" style="width: ' . $mapwidth . 'px"></div>';
 
 		$markerArray['###JSSETTINGS###']	= '<input type="hidden" id="c' . $cid . '_latlng" value="' . $destination_coordinates[0] . ',' . $destination_coordinates[1] . '" />';
 		$markerArray['###JSSETTINGS###']	.= '<input type="hidden" id="c' . $cid . '_zoom" value="' . $zoom . '" />';

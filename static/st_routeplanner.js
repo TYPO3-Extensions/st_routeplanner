@@ -44,6 +44,11 @@ $(document).ready(function() {
 				google.maps.event.addListener(marker, 'click', function() {
 					infowindow.open(map,marker);
 				});
+
+				google.maps.event.addDomListener(window, 'resize', function() {
+					map.setCenter(myLatlng);
+				});
+
 			});
 		}
 	}
